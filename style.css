@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background: linear-gradient(
+        90deg,
+        #081224,
+        #1d2a44
+    );
+    padding: 30px;
+}
+
+/* CAIXAS */
+
+.box{
+    width: 450px;
+    min-height: 520px;
+    background: #313d53;
+    border-radius: 24px;
+    padding: 35px;
+    box-shadow:
+        0 0 25px rgba(0,0,0,0.4),
+        0 0 40px rgba(0,0,0,0.2);
+    position: relative;
+}
+
+/* BORDA COLORIDA */
+
+.sistema-a{
+    border-top: 4px solid #00d9ff;
+}
+
+.sistema-b{
+    border-top: 4px solid #8b5cf6;
+}
+
+/* TITULOS */
+
+h2{
+    color: #40c4ff;
+    font-size: 48px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+h4{
+    color: #dfe6ee;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/* INPUT */
+
+input{
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 16px;
+    background: #4a5568;
+    color: white;
+    font-size: 22px;
+    outline: none;
+    margin-bottom: 25px;
+    transition: 0.3s;
+}
+
+input::placeholder{
+    color: #d1d5db;
+}
+
+input:focus{
+    border: 2px solid #00cfff;
+    background: #556177;
+}
+
+/* BOTÃO */
+
+button{
+    width: 100%;
+    padding: 18px;
+    border: none;
+    border-radius: 16px;
+    background: linear-gradient(
+        90deg,
+        #00c6ff,
+        #3b82f6
+    );
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 25px;
+}
+
+button:hover{
+    transform: scale(1.02);
+    opacity: 0.95;
+}
+
+/* STATUS */
+
+#statusSistemaA,
+#statusSistema-a{
+    background: #465267;
+    color: #f1f5f9;
+    padding: 18px;
+    border-radius: 14px;
+    font-size: 22px;
+    border-left: 6px solid #38bdf8;
+}
+
+/* LOG WEBHOOK */
+
+pre{
+    background: #020d2b;
+    color: #29b6ff;
+    padding: 20px;
+    border-radius: 18px;
+    min-height: 300px;
+    font-size: 18px;
+    overflow-x: auto;
+    box-shadow: inset 0 0 15px rgba(0,0,0,0.5);
+}
+
+/* RESPONSIVO */
+
+@media(max-width: 1000px){
+
+    body{
+        flex-direction: column;
+    }
+
+    .box{
+        width: 100%;
+        max-width: 500px;
+    }
+}
